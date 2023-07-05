@@ -142,7 +142,7 @@ input {
     height: 40px;
     color: #2D3748;
     padding: 0 10px;
-    max-width: 260px;
+    width: 260px;
 }
 
 input:focus {
