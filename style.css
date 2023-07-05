@@ -21,28 +21,42 @@ body {
 /* ASIDE ELEMENTS */
 
 aside {
-    background: linear-gradient(316deg, #007AFF 0%, #0F70DA 100%);
+    position: relative;
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 50px;
-    position: relative;
     
-
-}
+    /* Add a color overlay */
+    background-image: url(images/wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  aside::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 122, 255, 0.8);
+    mix-blend-mode: multiply;
+  }
 
 aside h2 {
     color: white;
     text-align: center;
-    font-size: 19.757px;
+    font-size: 25px;
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
     letter-spacing: -0.395px;
     width: 390.901px;
+    z-index: 2;
 }
 
 aside img {
@@ -68,7 +82,7 @@ main {
 
 .form-header {
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
 h1 {
