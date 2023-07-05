@@ -142,7 +142,11 @@ input {
     height: 40px;
     color: #2D3748;
     padding: 0 10px;
+}
+
+input:not([type="checkbox"]){
     width: 260px;
+
 }
 
 input:focus {
